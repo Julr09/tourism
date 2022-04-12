@@ -1,0 +1,20 @@
+<header class="primary-header flex">
+  <div>
+    <img src="assets/shared/logo.svg" alt="space tourism logo" class="logo">
+  </div>
+  <button (click)="toggleNav()" class="mobile-nav-toggle" [ngClass]="open ? 'close' : 'hamburger'">
+    <span class="sr-only">Menu</span>
+  </button>
+  <nav>
+    <ul class="primary-navigation underline-indicators flex" [ngClass]="{'open': open}">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2"><span>00</span>Home</a>
+      <li routerLinkActive="active" routerLink="/destination">
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2 "><span>01</span>Destination</a>
+      <li routerLinkActive="active" routerLink="/crew">
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2"><span>02</span>Crew</a>
+      <li routerLinkActive="active" routerLink="/technology">
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2"><span>03</span>Technology</a>
+    </ul>
+  </nav>
+</header>

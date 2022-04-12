@@ -1,0 +1,10 @@
+.flex {
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 55em) {
+  .flex {
+    justify-content: flex-start;
+  }
+}

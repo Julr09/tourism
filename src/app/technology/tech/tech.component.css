@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid hsl( var(--clr-white) / .5);
+  color: hsl( var(--clr-white));
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl( var(--clr-white) / .5);
+}
+
+.flex > .active {
+  background-color: hsl( var(--clr-white));
+  color: hsl( var(--clr-dark));
+}
+
+
+.text {
+  margin: 1rem 1rem 5rem;
+  line-height: 1.563;
+}
+
+.flex {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tech-details {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+

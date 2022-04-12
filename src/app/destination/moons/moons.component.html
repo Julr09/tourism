@@ -1,0 +1,35 @@
+<main id="main" class="grid-container grid-container--destination flow">
+  <h1 class="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
+
+  <img [src]="image" alt="destination">
+
+  <div class="tab-list underline-indicators flex">
+    <button routerLink="/destination" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+            class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Moon
+    </button>
+    <button routerLink="/destination/mars" routerLinkActive="active"
+            class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Mars
+    </button>
+    <button routerLink="/destination/europa" routerLinkActive="active"
+            class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Europa
+    </button>
+    <button routerLink="/destination/titan" routerLinkActive="active"
+            class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2">Titan
+    </button>
+  </div>
+
+  <article class="destination-info">
+    <h2 class="fs-800 uppercase ff-serif">{{name}}</h2>
+    <p>{{description}}</p>
+    <div class="destination-meta flex">
+      <div>
+        <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+        <p class="ff-serif uppercase">{{distance}}</p>
+      </div>
+      <div>
+        <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+        <p class="ff-serif uppercase">{{travel}}</p>
+      </div>
+    </div>
+  </article>
+</main>

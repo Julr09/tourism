@@ -1,0 +1,6 @@
+<div class="tab-list underline-indicators flex">
+  <button *ngFor="let tab of tabs" class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+          [ngClass]="{'active': tab.active}" (click)="selectTab(tab)">{{tab.tabTitle}}
+  </button>
+</div>
+<ng-content></ng-content>
