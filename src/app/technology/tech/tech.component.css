@@ -1,6 +1,5 @@
 h1 {
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 button {
@@ -25,18 +24,43 @@ button:hover {
 
 
 .text {
-  margin: 1rem 1rem 5rem;
   line-height: 1.563;
 }
 
 .flex {
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .tech-details {
+  margin: 0 1rem;
   text-align: center;
-  margin-top: 2rem;
 }
 
+.grid-container {
+}
+
+.grid-container--tech {
+  padding: 0;
+  grid-template-areas:
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+
+.grid-container--tech > h1 {
+  grid-area: title;
+}
+
+.grid-container--tech > img {
+  grid-area: image;
+}
+
+.grid-container--tech > .btns {
+  grid-area: tabs;
+}
+
+.grid-container--tech > .tech-details {
+  grid-area: content;
+}
 
