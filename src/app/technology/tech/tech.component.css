@@ -22,7 +22,6 @@ button:hover {
   color: hsl( var(--clr-dark));
 }
 
-
 .text {
   line-height: 1.563;
 }
@@ -37,6 +36,7 @@ button:hover {
 }
 
 .grid-container {
+  grid-template-rows: 50px 200px 80px 230px;
 }
 
 .grid-container--tech {
@@ -50,6 +50,7 @@ button:hover {
 
 .grid-container--tech > h1 {
   grid-area: title;
+
 }
 
 .grid-container--tech > img {
