@@ -19,6 +19,9 @@ import { PilotComponent } from './pilot/pilot.component';
     CEComponent,
     PilotComponent
   ],
+  exports: [
+    CrewReUseComponent
+  ],
   imports: [
     CommonModule,
     CrewRoutingModule

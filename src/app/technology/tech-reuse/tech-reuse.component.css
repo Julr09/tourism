@@ -17,6 +17,7 @@
 .buttons {
   align-self: start;
   grid-area: tabs;
+  margin-bottom: 2rem;
 }
 
 .tech-details {
@@ -120,6 +121,10 @@ button:hover {
 
   .buttons {
     flex-direction: column;
+  }
+
+  .con .buttons {
+    align-self: center;
   }
 
   .numbered-title {

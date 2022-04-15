@@ -8,7 +8,6 @@ import data from '../../data/data.json'
 })
 export class TitanComponent implements OnInit {
   titan: any
-  constructor() {}
 
   ngOnInit(): void {
     this.titan = data.destinations[3]

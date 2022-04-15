@@ -1,0 +1,21 @@
+<main class="grid-container grid-container--tech">
+  <h1 class="numbered-title"><span aria-hidden="true">03</span> Space launch 101</h1>
+  <picture>
+    <source media="(min-width: 55em)" [srcset]="image2">
+    <img [src]="image" alt="Technology">
+  </picture>
+  <div class="con">
+    <div class="flex buttons">
+      <button routerLink="/technology" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="fs-600">1</button>
+      <button routerLink="/technology/spaceport" routerLinkActive="active" class="fs-600">2</button>
+      <button routerLink="/technology/space-capsule" routerLinkActive="active" class="fs-600">3</button>
+    </div>
+    <article class="tech-details">
+      <header>
+        <h2 class="fs-200 ff-sans-cond text-accent uppercase letter-spacing-3">The terminology...</h2>
+        <p class="fs-700 uppercase ff-serif space-port">{{vehicle}}</p>
+      </header>
+      <p class="text text-accent">{{description}}</p>
+    </article>
+  </div>
+</main>
